@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GroundPS</title>
+<style>
+    body {
+        background-color: #111;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        font-size: 50px;
+        animation: rgbText 3s infinite;
+    }
+    @keyframes rgbText {
+        0% { color: red; }
+        33% { color: lime; }
+        66% { color: cyan; }
+        100% { color: red; }
+    }
+    .status {
+        padding: 10px;
+        background: green;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    .link {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background: #222;
+        border: 1px solid #555;
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        width: fit-content;
+        transition: 0.3s;
+    }
+    .link:hover {
+        background: #444;
+    }
+    textarea {
+        width: 300px;
+        height: 70px;
+        background: #222;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        resize: none;
+        font-size: 14px;
+    }
+    button {
+        margin-top: 5px;
+        padding: 5px 10px;
+        background: #555;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #777;
+    }
+</style>
+</head>
+<body>
+
+<h1>GroundPS</h1>
+<p>GroundPS adalah server private Growtopia (GTPS) yang seru, stabil, dan gratis dimainkan oleh semua pemain. Nikmati fitur eksklusif, update rutin, dan komunitas yang ramah!</p>
+
+<div class="status">Server Status: Online ✅</div>
+
+<!-- Link VHost -->
+<a class="link" href="https://www.mediafire.com/file/gk2w6a99cxtg2vc/Groundps.txt/file" target="_blank">📥 Download VHost</a>
+
+<!-- PTUNNEL -->
+<p><b>COPY PTUNNEL:</b></p>
+<a class="link" href="https://growsoft.cc/android.txt" target="_blank">📄 PTUNNEL (ANDROID)</a>
+
+<!-- WINDOWS IP -->
+<p><b>COPY WINDOWS HOST:</b></p>
+<textarea id="winIP">91.134.85.13 GROWTOPIA1.COM
+91.134.85.13 GROWTOPIA2.COM
+91.134.85.13 WWW.GROWTOPIA1.COM
+91.134.85.13 WWW.GROWTOPIA2.COM</textarea><br>
+<button onclick="copyText('winIP')">Copy</button>
+
+<!-- Surge5 -->
+<p><b>Copy Surge5:</b></p>
+<a class="link" href="https://growsoft.cc/ios.txt" target="_blank">📄 Surge5 (iOS)</a>
+
+<script>
+function copyText(id) {
+    var copyText = document.getElementById(id);
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("Teks berhasil disalin!");
+}
+</script>
+
+</body>
+</html>
